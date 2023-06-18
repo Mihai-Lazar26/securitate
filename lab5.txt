@@ -1,0 +1,54 @@
+Ex1:
+Candidate 1:
+
+seed va deveni 0 si va ramane asa constant
+
+Canidate 2:
+
+seed creste liniar spre infinit
+
+Candidate 3:
+
+presupunand ca algoritmul e rulat la infinit, seed va ajunge liniar la 0 si va ramane asa
+
+Ex2:
+import string
+import secrets
+
+def generatPass():
+    alphabet = string.ascii_letters + string.digits + ".!$@"
+    while True:
+        password = ''.join(secrets.choice(alphabet) for i in range(10))
+        if (any(c.islower() for c in password)
+                and any(c.isupper() for c in password)
+                and any(c.isdigit() for c in password)
+                and any(c in ".!$@" for c in password)):
+            return password
+
+Ex. Utilizare: Generare parole random (securizate) pentru utilizatori (Buton generare parola random in aplicatie).
+
+secrets.token_urlsafe(32)
+
+Ex. Utilizare: Token asignat sesiunii de autentificare a unui utilizator
+
+secrets.token_hex(32)
+
+Ex. Utilizare: Generare key random pentru criptarea unor mesaje
+
+def check(a, b):
+    return secrets.compare_digest(a, b)
+
+def hashPass(password : str):
+    salt = bcrypt.gensalt()
+    hashed = bcrypt.hashpw(password, salt)
+
+    return salt, hashed
+
+Ex3:
+- Din cauza ca programul foloseste acelasi seed pentru fiecare invocare al PRNG-ului, valorile lui sunt predictibile.
+- Din cauza ca seed-ul pentru PRNG este intotdeauna id-ul unui user, id-ul sesiuni o sa fie intotdeauna acelasi.
+- CWE ID urile sunt 336, 337
+- daca spatiul seedurilor este mic PRNG-ul este vulnerabil atacurilor prin forta bruta, CWE Id ul este 339
+- CAPEC ID-ul este 112 Dacă secretul a fost ales algoritmic, criptoanaliza poate fi aplicată algoritmului pentru a descoperi modele în acest algoritm. (Acest lucru este adevărat chiar dacă secretul nu este folosit în criptografie.) Periodicitatea, nevoia de seed-uri sau slăbiciunile generatorului pot duce la un spațiu secret semnificativ mai mic.
+- alte cwe uri: CWE ID 335, CVE-2020-28597
+- CVE-2022-2625, CVE-2022-15525

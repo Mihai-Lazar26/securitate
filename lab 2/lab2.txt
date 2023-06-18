@@ -1,0 +1,58 @@
+alg. de criptare
+(E, D) K, M, C
+
+K - spatiul cheilor
+M - spatiul mesajelor
+C - sp. mesajelor criptate
+
+D(k, E(k, m)) = m
+
+E: K x M -> C
+D: K x C -> M
+
+One time Pad
+m = 01...10
+k = 11...11
+
+C = m XOR k
+
+Ex1.1:
+One Time Pad este un sistem de criptare perfect sigur daca este folosit corect.
+
+Ex1.2:
+
+cheia: a3dfe4cb5fa61c1add7f463a19fca4534f1a82c77370d87c683415ee69cc046dc2e05de28494cce3f3cfca456dcc368148b9e2bbc91a9076dfa5be2013df60069c8240a792e1519560d103f759c692
+
+Ex1.3:
+In functie de criptare alt rezultat.
+
+Ex2:
+1. Caesar Cipher 
+(Key) offset: 18
+Plaintext: MESAJULMEU
+Ciphertext: EWKSBMDEWM
+
+Pentru decriptare vom verifica toate cheile de la 0-25.
+
+2. Rail Fence Cipher
+(Key) Number of lines: 3
+Plaintext: MESAJULMEU
+Rail Fence:
+M	 	 	A	 	 	L	 	 	U
+ 	E	 	 	J	 	 	M	 	 	
+ 	 	S	 	 	U	 	 	E	 	 	
+Ciphertext: MALUEJMSUE
+
+Pentru decriptare vom verifica toate cheile <= lungimea mesajului. O cheie reprezinta numarul de linii folosite pentru criptare.
+
+Ex3:
+Pentru textul: ENHFJ EWK LML EOJ GDJ BMONKC PMCG YEPMAC FOVQGMROEQDHF FMAQNJ. CHWFJ GDJHO HWUJWGHMW HW 1978, GDJV DEUJ EG MWFJ LJJW FENNJK HWCJQEOELNJ, EWK DEUJ LJJW GDJ CALXJFG MY WAPJOMAC KHUMOFJC, GOEUJNC, EWK GMOPJWGC. HW GDJ JWCAHWR VJEOC, MGDJO FDEOEFGJOC DEUJ XMHWJK GDJHO FOVQGMROEQDHF YEPHNV. GDJOJC JUJ, GDJ QECCHUJ EWK CALPHCCHUJ JEUJCKOMQQJO, PENNMOV GDJ PENHFHMAC EGGEFTJO, EWK GOJWG, GOACGJK LV ENN, XACG GM WEPJ E YJB. BDHNJ ENHFJ, LML, EWK GDJHO JSGJWKJK YEPHNV BJOJ MOHRHWENNV ACJK GM JSQNEHW DMB QALNHF TJV FOVQGMROEQDV BMOTC, GDJV DEUJ CHWFJ LJFMPJ BHKJNV ACJK EFOMCC MGDJO CFHJWFJ EWK JWRHWJJOHWR KMPEHWC. GDJHO HWYNAJWFJ FMWGHWAJC GM ROMB MAGCHKJ MY EFEKJPHE EC BJNN: ENHFJ EWK LML EOJ WMB E QEOG MY RJJT NMOJ, EWK CALXJFG GM WEOOEGHUJC EWK UHCAEN KJQHFGHMWC GDEG FMPLHWJ QJKERMRV BHGD HW-XMTJC, MYGJW OJYNJFGHWR MY GDJ CJSHCG EWK DJGJOMWMOPEGHUJ JWUHOMWPJWGC HW BDHFD GDJV BJOJ LMOW EWK FMWGHWAJ GM LJ ACJK. PMOJ GDEW XACG GDJ BMONKC PMCG YEPMAC FOVQGMROEQDHF FMAQNJ, ENHFJ EWK LML DEUJ LJFMPJ EW EOFDJGVQJ MY KHRHGEN JSFDEWRJ, EWK E NJWC GDOMARD BDHFD GM UHJB LOMEKJO KHRHGEN FANGAOJ. I.KAQMWG EWK E.FEGGEQEW FOVQGMFMAQNJ
+
+Avem mesajul curat: alice and bob are the worlds most famous cryptographic couple since their invention in they have at once been called inseparable and have been the subject of numerous divorces travels and torments in the ensuing years other characters have joined their cryptographic family theres eve the passive and submissive eavesdropper mallory the malicious attacker and trent trusted by all just to name a few while alice bob and their extended family were originally used to explain how public key cryptograph
+
+Ex4:
+https://www.101computing.net/enigma-daily-settings-generator/
+Ziua 26, IV II III, ECW, GS JD MN OQ VF XH, GUB
+MIHAI -> SOZZD 
+Pentru decriptare am folosit setarile initiale pe care le am avut la criptare si am tastat textul SOZZD in masina pentru a obtine textul MIHAI
+exemplu text criptat: HRKMZ acesta se decripteaza in VERDE, modul prin care am procedat a fost de a cripta un cuvant de aceeasi lungime si a vedea ce obtin.

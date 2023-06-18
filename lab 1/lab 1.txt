@@ -1,0 +1,83 @@
+3 bytes -> 4 cifre base64
+2 bytes -> 3 cifre base64
+1 bytes -> 2 cifre base64
+
+F  M  I
+70 77 73 (ASCII)
+
+0100 0110 0100 1101 0100 1001
+010001 100100 110101 001001
+17      36      53     9
+R       k       1      J
+
+res: Rk1J
+
+F  M  I  !
+70 77 73 9
+
+010001 100100 110101 001001 001000 010000
+R       k       1      J       I     Q==
+
+La
+76 97
+
+0100 1100 0110 0001
+010011 000110 000100
+19 6 4
+T G E =
+
+
+
+Ex 1:
+A - 3
+B - 1
+C - 5
+D - 2
+E - 4
+
+Ex 3:
+36 | 0
+18 | 0
+9  | 1
+4  | 0
+2  | 0
+1  | 1
+0
+
+36 = 0010 0100 = 2^5 + 2^2 = 32 + 4 = 36
+A0B1 = 10 0 11 1 = 1010 0000 1011 0001
+
+Ex 4:
+MIHAI
+77 73 72 65 73
+
+66 82 65 86 79 = BRAVO
+
+Ex 5:
+
+LAZAR -> TEFaQVI=
+
+U3VudCBzdHVkZW50IGxhIEZNSS4= -> Sunt student la FMI.
+
+Ex 6:
+malware = Software-ul rău intenționat, software-ul dăunător este un tip de software proiectat intenționat pentru deteriorarea unui computer sau infiltrarea în el, sau/și deteriorarea ori infiltrarea în întregi rețele de computere, fără consimțământul proprietarului respectiv.
+
+virus = Un virus este un tip e program care la executie se replica modificand programe inserandu-si propriul cod
+
+dropper = Un dropper este un fel de troian care a fost conceput pentru a „instala” un fel de malware într-un sistem țintă. Codul malware poate fi conținut în dropper astfel încât să se evite detectarea de către scanerele de viruși sau dropperul poate descărca malware-ul pe mașina țintă odată activat.
+
+downloader = Este un tip e troian care descarca si instaleaza programe malitioase.
+
+trojan = Este un virus care se deghizeaza ca un program legitim.
+
+spyware = Programele spyware sunt o categorie de software rău intenționat, atașate de obicei la programe gratuite, care captează pe ascuns date de marketing și le folosesc apoi pentru a transmite utilizatorului reclame corespunzătoare dar nesolicitate.
+
+riskware = Riskware este un software a cărui instalare și execuție prezintă un posibil risc, dar nu definit pentru un computer gazdă.
+
+ransomware = Ransomware este un software rău intenționat care, după ce se instalează pe dispozitivul victimei, criptează datele victimei ținându-le „ostatice” sau șantajează victima, pe care o amenință că îi va publica datele dacă aceasta nu plătește o „răscumpărare”.
+
+adware = Adware este un program care afișează reclame de conținut promoțional la rularea acestuia, reclame care pot fi afișate ca bannere în fereastra programului, sau de tip pop-up
+
+worm = Este un program care se replica cu scopul de a se raspani la alte computere.
+
+obfuscare = În dezvoltarea de software, obfuscarea este actul de a crea cod sursă sau mașină care este greu de înțeles de oameni sau computere.

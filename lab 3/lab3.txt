@@ -1,0 +1,55 @@
+A(adversar) algoritm este
+- probabilistic: daca are acces la o sursa e aleatorism (gen de nr. aleatoare)
+- polinomial in timp: daca exista un polinom P(X)= x^d + a.(d-1) x^(d-1).. a.0 astfel pentru orice input i de marime n A executa cel mult P(n) pasi
+
+|Pr(A(c)->1/x1 = m) - Pr(A(c)->2/x.1 = m)| <= E(n)
+
+f : N -> R este neglijabila daca pt orice P(x) = a.d X^d + ... + a.0 polinom exista n.p (apartine) N cu f(n) < (1/p(n)) pt orice n > n.p
+
+p polinom        | => p.f f. neglijabila
+f f. neglijabila |
+
+f(n) = ?*sqrt(n)       neglijabile | orice f constanta nu e neglijabila
+f(n) = (3/2)sqrt(n)                |
+
+
+Ex1
+1 - D
+2 - B
+3 - F 
+4 - A
+5 - C
+6 - E
+
+Ex2
+C - confidentialitate
+I - integritate
+D - disponibilitate
+
+1 - C
+2 - D
+3 - I
+4 - C
+5 - I, D
+
+Ex3
+1-F
+2-A
+3-F
+
+Ex4
+1- neneglijabil
+2- neneglijabil
+3- neneglijabil
+4- neglijabila
+5- f este neglijabila
+6- f este neneglijabila
+
+Ex5
+securitatea computationala este o relaxare a securitatii perfecte. De exemplu in OTP cheia ar trebui sa fie infinita pentru securitatea perfecta ceea ce e imposibil, de aceea preferam securiatatea computationala.
+
+Ex6
+256!
+1/(2^226)
+nu
+

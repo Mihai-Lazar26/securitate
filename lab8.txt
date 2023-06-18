@@ -1,0 +1,8 @@
+ex 1:
+a - A
+b - F
+c - A
+d - A
+e - F
+f - F
+g - F

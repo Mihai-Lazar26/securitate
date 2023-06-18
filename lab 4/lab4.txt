@@ -1,0 +1,18 @@
+Ex1:
+A - 4
+B - 2
+C - 1
+D - 3
+E - 6
+F - 5
+
+Ex2:
+Adresa de email mbm@externalys.net nu pare sa aiba legatura cu banca.
+Mesajul a fost identificat ca junk.
+Link-ul butonului Valida (https://zozweb.com/RRO) nu are legatura cu domeniul banci.
+
+Ex3:
+Submiting host-ul nu este egal cu adresa decanatului.
+Ip-ul hostului se afla in America.
+Organizatia este Piradius Net.
+Ip-ul 101.99.94.155 nu este desemnat ca un sender permis.
